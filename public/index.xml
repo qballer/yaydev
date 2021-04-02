@@ -3,18 +3,18 @@
   <channel>
     <title>log world</title>
     <link>https://yay.dev/</link>
-    <description>Recent content on log world</description>
+    <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Apr 2021 14:10:28 +0300</lastBuildDate><atom:link href="https://yay.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>https://yay.dev/posts/my-first-post/</link>
-      <pubDate>Fri, 02 Apr 2021 14:10:28 +0300</pubDate>
-      
-      <guid>https://yay.dev/posts/my-first-post/</guid>
-      <description>Hello World</description>
-    </item>
+      <item>
+        <title>My First Post</title>
+        <link>https://yay.dev/posts/my-first-post/</link>
+        <pubDate>Fri, 02 Apr 2021 14:10:28 +0300</pubDate>
+        
+        <guid>https://yay.dev/posts/my-first-post/</guid>
+        <description>Hello World</description>
+      </item>
     
   </channel>
 </rss>
