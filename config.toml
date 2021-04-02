@@ -1,0 +1,4 @@
+baseURL = "https://yay.dev"
+languageCode = "en-us"
+title = "log world"
+theme = "Binario"
