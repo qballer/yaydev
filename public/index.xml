@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>log world</title>
+    <title>Yay for code and other things</title>
     <link>https://yay.dev/</link>
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Apr 2021 14:10:28 +0300</lastBuildDate><atom:link href="https://yay.dev/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Page</title>
+        <link>https://yay.dev/page/</link>
+        <pubDate>Sat, 03 Apr 2021 19:22:08 +0300</pubDate>
+        
+        <guid>https://yay.dev/page/</guid>
+        <description>Hi, My name is Doron. I&amp;rsquo;m a software develper and this is my personal log.</description>
+      </item>
+    
       <item>
         <title>My First Post</title>
         <link>https://yay.dev/posts/my-first-post/</link>
