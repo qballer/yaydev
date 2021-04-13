@@ -1,4 +1,34 @@
 baseURL = "https://yay.dev"
 languageCode = "en-us"
 title = "Yay for code and other things"
-theme = "color"
+theme = "hugo-coder"
+
+[params]
+  author = "Doron Tsur"
+  colorScheme = "dark"
+  hideFooter = true
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/qballer/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/qbllr_/"
+[[params.social]]
+  name = "Gitlab"
+  icon = "fa fa-gitlab fa-2x"
+  weight = 2
+  url = "https://gitlab.com/qballer"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"

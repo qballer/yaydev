@@ -1,12 +1,3 @@
-[submodule "themes/lekh"]
-	path = themes/lekh
-	url = https://github.com/invinciblycool/lekh
-[submodule "themes/Binario"]
-	path = themes/Binario
-	url = https://github.com/Vimux/Binario
-[submodule "themes/hugo-theme-zzo"]
-	path = themes/hugo-theme-zzo
-	url = https://github.com/zzossig/hugo-theme-zzo
-[submodule "themes/color"]
-	path = themes/color
-	url = https://gitlab.com/rmaguiar/hugo-theme-color-your-world
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder/
