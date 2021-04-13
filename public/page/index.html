@@ -1,537 +1,162 @@
 <!DOCTYPE html>
-<html lang="en" data-mode="light">
-  <head prefix="og: http://ogp.me/ns#">
+<html lang="en">
+
+  <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.82.0">
-<meta name="theme" content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<title>Page</title>
-
-
-
-
-
-
-<meta name="robots" content="index follow">
-<meta name="referrer" content="no-referrer-when-downgrade">
-
-
-
-
-  
-    <link rel="canonical" href="https://yay.dev/page/">
-  
-
-
-
-
-
-
-
-
-<meta property="og:site_name" content="Yay for code and other things">
-<meta property="og:title" content="Page">
-
-  <meta property="og:url" content="https://yay.dev/page/">
-
-
-
-
-
-
-
-
-  <meta property="og:type" content="website">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<meta name="theme-color" content="#222">
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https:\/\/yay.dev",
-      "inLanguage": "en",
-      "name": "Yay for code and other things",
-      "description": "",
-      "publisher": ""
-    }
-  </script>
-
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.min.css">
-
-
-
-<noscript>
-
-  
-  
-
-  
-    <meta name="theme-color" content="#dd587c" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#225670" media="(prefers-color-scheme: light)">
-  
-
-  <style>
-  
-    html {
-      --accent: #225670;
-    }
-  
-    .req-js {
-      display: none;
-    }
     
-  </style>
-  
-</noscript>
+
+    <meta name="author" content="Doron Tsur">
+    <meta name="description" content="Hi, My name is Doron. I&rsquo;m a software develper and this is my personal log.">
+    <meta name="keywords" content="">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Page"/>
+<meta name="twitter:description" content="Hi, My name is Doron. I&rsquo;m a software develper and this is my personal log."/>
+
+    <meta property="og:title" content="Page" />
+<meta property="og:description" content="Hi, My name is Doron. I&rsquo;m a software develper and this is my personal log." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yay.dev/page/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2021-04-03T19:22:08&#43;03:00" />
+<meta property="article:modified_time" content="2021-04-03T19:22:08&#43;03:00" />
 
 
 
+    <title>
+  Page · Yay for code and other things
+</title>
 
-
-
-  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff" as="font" crossorigin="anonymous">
-
-  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff2" as="font" crossorigin="anonymous">
-
-  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff" as="font" crossorigin="anonymous">
-
-  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff2" as="font" crossorigin="anonymous">
-
-  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff" as="font" crossorigin="anonymous">
-
-  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff2" as="font" crossorigin="anonymous">
-
-  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff" as="font" crossorigin="anonymous">
-
-  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff2" as="font" crossorigin="anonymous">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script>
     
-      'use strict';
-
-// Get default accent colors
-
-
-
-// Get CSS transition
-
-
-// =================================================
-// Mode switcher + Custom accent color
-// Based on: https://gist.github.com/regpaq/04c67e8aceecbf0fd819945835412d1f
-// =================================================
-
-
-  // New prefers-color-scheme media query to detect OS light/dark mode setting
-  const PREFERS_LIGHT = window.matchMedia('(prefers-color-scheme: light)');
-  const PREFERS_DARK = window.matchMedia('(prefers-color-scheme: dark)');
-
-
-const ROOT = document.documentElement;
-
-const SHEET = document.documentElement.style;
-const META_THEME_COLOR = document.querySelector('meta[name=theme-color]');
-
-// Set the dark
-function setDark() {
-  ROOT.dataset.mode = 'dark'
-};
-
-// Set the light
-function setLight() {
-  ROOT.dataset.mode = 'light'
-};
-
-// Initialization triggers light/dark mode based on prior preference, then OS setting
-// And yes, I know 'true' here is a string
-if(localStorage.getItem('isDark') == 'true') {
-  setDark()
-} else if(localStorage.getItem('isDark') == 'false') {
-  setLight()
-
-  
-    } else if(PREFERS_DARK.matches) {
-      setDark()
-    } else if(PREFERS_LIGHT.matches) {
-      setLight()
-  
-
-};
-
-
-
-
-// TODO
-// Maybe I should rethink this ...
-function getAccent() {
-  if (ROOT.dataset.mode === 'dark') {
-  
-    if (localStorage.getItem('darkAccent') === null) {
-      
-      
-      
-      var currentAccent = "#dd587c"
-    } else {
+      <link rel="canonical" href="https://yay.dev/page/">
     
-      var currentAccent = localStorage.getItem('darkAccent')
-      
-      
-      
-    }
-  } else if (ROOT.dataset.mode === 'light') {
 
-    if (localStorage.getItem('lightAccent') === null) {
-  
-      
-      
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
 
-      var currentAccent = "#225670"
-    } else {
-      var currentAccent = localStorage.getItem('lightAccent')
-      
-      
-      
-    }
-  };
-  
-  return currentAccent
-};
-
-var activeAccent = getAccent();
-
-// Set the active accent color for these right after setting mode color
-// Should mitigate any flickering
-SHEET.setProperty('--accent', activeAccent);
-
-// Also meta-theme cuz, why not
-META_THEME_COLOR.setAttribute('content', activeAccent);
-
-
-function updateAccent() {
-  var activeAccent = getAccent();
-
-  SHEET.setProperty('--accent', activeAccent);
-  PALETTE.value = activeAccent;
-  META_THEME_COLOR.setAttribute('content', activeAccent);
-};
-
-
-document.addEventListener('DOMContentLoaded', function () {
-
-  // Update the color picker with the active accent color 
-  PALETTE.value = activeAccent;
-
-  // Smooth transition, only when changing modes (and not loading pages)
-  function smoothTransition() {
-    document.body.style.transition 
-    = document.querySelector('header').style.transition
-    = document.querySelector('footer').style.transition
-    = 'background-color .3s ease, color .3s ease'
-  };
-  
-  // Give the user a choice
-  function userModeChange() {
-  
-    smoothTransition();
-
-    if (ROOT.dataset.mode == 'light') {
-      setDark();
-      localStorage.setItem('isDark', 'true')
-
-      
-      
-    } else {
-      setLight();
-      localStorage.setItem('isDark', 'false')
-      
-      
-      
-    };
     
-    updateAccent()
-  };
-
-  
-  // TEST
-  // Keyboard shortcut for mode change, here for testing purposes only
-  // CTRL + ALT + M
-  
-
-
-  
-  
-    // Runs when OS changes light/dark mode. Changes only if you were on default
-    // color state (light on light mode, dark on dark mode).
-    function OSModeChange() {
-    
-      smoothTransition();
       
-      if (PREFERS_LIGHT.matches) {
-        setLight();
-        localStorage.setItem('isDark', 'false')
+      
+      <link rel="stylesheet" href="/css/coder.min.c884c9ebf7b9aeed5fc748f64d6575016297c22227fb677bc4429bbed48d2d9b.css" integrity="sha256-yITJ6/e5ru1fx0j2TWV1AWKXwiIn&#43;2d7xEKbvtSNLZs=" crossorigin="anonymous" media="screen" />
+    
 
+    
+
+    
+      
         
         
-      } else if (PREFERS_DARK.matches) {
-        setDark();
-        localStorage.setItem('isDark', 'true')
-        
-        
-      };
+        <link rel="stylesheet" href="/css/coder-dark.min.dde8a61eb31a32353b4baf3d9113f03c4ea2a8ca9bb736f59ca2d2b2cb664f0b.css" integrity="sha256-3eimHrMaMjU7S689kRPwPE6iqMqbtzb1nKLSsstmTws=" crossorigin="anonymous" media="screen" />
       
-      updateAccent()
-    };
-
-    // Listeners for when you change OS setting for light/dark mode
-    PREFERS_LIGHT.addListener(OSModeChange);
-    PREFERS_DARK.addListener(OSModeChange);
-  
-  
-  
-  // Mode change button
-  document.querySelector('footer button')
-    .addEventListener('click', userModeChange)
-})
+    
 
     
-  </script>
 
+    
 
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
-  <body>
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-dark"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
 
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Yay for code and other things
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
     <header>
-      
-
-  <a href="/">Yay for code and other things</a>
-
-
-
-
-
+      <h1 class="title">
+        <a class="title-link" href="https://yay.dev/page/">
+          Page
+        </a>
+      </h1>
     </header>
 
-    <div class="filler">
-      
+    <p>Hi, My name is Doron. I&rsquo;m a software develper and this is my personal log.</p>
 
-  <main>
-    <article>
-      <header>
-        
-        <h1>Page</h1>
-
-        
-          <p>
-            
-              Published on <time datetime="2021-04-03">2021-04-03</time>
-            
-          </p>
-        
-        
-        
-        
-      </header>
-    
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>Hi, My name is Doron. I&rsquo;m a software develper and this is my personal log.</p>
-
-
-
-    </article>
-  </main>
-
-
-    </div>
-    
-    <footer>
-      
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="req-js">
-  <button class="outline-dashed" title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="#adjust"/></svg></button><input class="outline-dashed" type="color" list="presets" value="#225670" title="Change accent color." aria-label="Change accent color."><datalist id="presets"><option value="#225670"><option value="#dd587c"></datalist>
+  </article>
 </section>
 
-
-
-
-
-    </footer>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
-      <symbol viewBox="0 0 512 512" id="adjust">
-        <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/>
-      </symbol>
-      
-      
-      
-      
   
-<symbol viewBox="0 0 448 512" id="hashtag">
-  <path d="M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z"/>
-</symbol>
 
-
+      </div>
 
       
+
+    </main>
+
+    
       
-      
-    </svg>
-
-    
-    
+      <script src="/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
     
 
-      <script>
-        
-          'use strict';const PALETTE=document.querySelector('footer input');PALETTE.onchange=function(){const a=PALETTE.value;SHEET.setProperty('--accent',a),ROOT.dataset.mode==='light'?localStorage.setItem('lightAccent',a):localStorage.setItem('darkAccent',a),updateAccent()}
-        
-      </script>
-
-    
-    
-    
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
   </body>
+
 </html>
