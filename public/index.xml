@@ -8,30 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Apr 2021 14:10:28 +0300</lastBuildDate><atom:link href="https://yay.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Page</title>
-      <link>https://yay.dev/page/</link>
-      <pubDate>Sat, 03 Apr 2021 19:22:08 +0300</pubDate>
-      
-      <guid>https://yay.dev/page/</guid>
-      <description>Hi, My name is Doron. I&amp;rsquo;m a software develper and this is my personal log.</description>
-    </item>
-    
-    <item>
       <title>About me</title>
       <link>https://yay.dev/about/</link>
       <pubDate>Fri, 02 Apr 2021 14:10:28 +0300</pubDate>
       
       <guid>https://yay.dev/about/</guid>
-      <description>Hi, my name is Doron</description>
+      <description>Hi, my name is Doron. This website is meant for note taking of projects I&amp;rsquo;m involved with. If you find some of my notes useful DM message me and let me know. During the day I&amp;rsquo;m a software developer mostly focused around Nodejs. I might be writing on a whole lot of other things.</description>
     </item>
     
     <item>
-      <title>My First Post</title>
+      <title>My sandbox</title>
       <link>https://yay.dev/posts/my-first-post/</link>
       <pubDate>Fri, 02 Apr 2021 14:10:28 +0300</pubDate>
       
       <guid>https://yay.dev/posts/my-first-post/</guid>
-      <description>Hello World</description>
+      <description>It&amp;rsquo;s been a while since I&amp;rsquo;ve done one of these.</description>
     </item>
     
   </channel>
